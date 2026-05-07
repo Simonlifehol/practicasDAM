@@ -10,19 +10,21 @@
         body {
             background-image: url("ChatGPT\ Image\ May\ 5\,\ 2026\,\ 11_33_13\ AM.png");
         }
+
         h1 {
             font-size: 100px;
             text-align: center;
-            color: aquamarine;
+            color: rgb(131, 255, 249);
         }
 
         h2 {
             text-align: center;
             font-size: 25px;
-            color: blue;
+            color: rgb(18, 58, 190);
         }
+
         h3 {
-            color: darkmagenta;
+            color: rgb(30, 32, 32);
         }
 
         .contenedor {
@@ -33,13 +35,53 @@
         .bloque {
             text-align: center;
             width: 200px;
-            color: chartreuse;
+            color: rgb(255, 212, 20);
+            border: 5px solid rgb(82, 75, 75);
+        }
+
+        .tabla1 {
+            float: right;
+            margin-right: 25px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid aquamarine;
+            border-collapse: collapse;
+        }
+
+        th {
+            color: aquamarine;
+        }
+
+        tr {
+            color: blue;
+        }
+
+        .bien {
+            color: rgb(44, 202, 84);
+        }
+
+        .mal {
+            color: rgb(255, 0, 0);
+        }
+
+        .fotoMimi {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            width: 150px;
+            border-radius: 10px;
         }
     </style>
 
 </head>
 
 <body>
+
+    <img class="fotoMimi" src="pixil-frame-0 (1).png" alt="miFoto" onclick="playmimi()">
     <h1>
         <header>
             Este es mi portafolio
@@ -64,19 +106,70 @@
         </div>
 
         <div class="bloque">
-            <h3>Otro conocimiento</h3>
+            <h3>MySQL</h3>
             <p>
-                Aquí puedes poner otro texto diferente.
+                Conocimiento en bases de datos relacionales como mySQL
             </p>
         </div>
 
         <div class="bloque">
-            <h3>Otro conocimiento</h3>
+            <h3>HTML</h3>
             <p>
-                Aquí puedes poner otro texto diferente.
+                Manejo en el uso de html,CSS y JavaScript
             </p>
         </div>
     </div>
+
+
+    <table class="tabla1">
+        <tr>
+            <th>
+                Competencia
+            </th>
+            <th>
+                ¿Conocimiento?
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Java
+            </td>
+            <td class="bien">
+                V
+            </td>
+        </tr>
+        <tr>
+            <td>
+                HTML
+            </td>
+            <td class="bien">
+                V
+            </td>
+        </tr>
+        <tr>
+            <td>
+                C++
+            </td>
+            <td class="mal">
+                X
+            </td>
+        </tr>
+        <tr>
+            <td>
+                MySQL
+            </td>
+            <td class="bien">
+                V
+            </td>
+        </tr>
+    </table>
+
+    <script>
+    function playmimi() {
+        let mimi = new Audio("mimikyu-cry.mp3");
+        mimi.play();
+    }
+</script>
 </body>
 
 </html>

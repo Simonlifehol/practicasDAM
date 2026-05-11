@@ -1,0 +1,132 @@
+body {
+    background-image: url("ChatGPT Image May 8, 2026, 04_49_02 PM.png");
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #1e1e1e;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #7df9ff;
+    text-shadow: 0 0 10px #00e1ff, 0 0 20px #00b7ff, 0 0 40px #008cff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #ffd54a;
+    text-shadow: 0 0 5px #ffae00, 0 0 10px #ff8800;
+}
+
+h3 {
+    color: #ffffff;
+    text-shadow: 0 0 5px #000;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloque {
+    text-align: center;
+    width: 200px;
+    color: #ffe082;
+    border: 4px solid #5c4033;
+    background-color: rgba(35, 35, 35, 0.85);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), 0 0 20px rgba(0, 140, 255, 0.2);
+}
+.contenedorV {
+    display: grid;
+    grid-column: span;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 50px;
+}
+.bloqueV {
+    text-align: center;
+    width: 200px;
+    color: #ffe082;
+    border: 4px solid #5c4033;
+    background-color: rgba(35, 35, 35, 0.85);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), 0 0 20px rgba(0, 140, 255, 0.2);
+}
+
+.tabla1 {
+    float: right;
+    margin-right: 25px;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+table,
+th,
+td {
+    border: 1px solid #63ffd9;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    color: #7df9ff;
+    background-color: rgba(0, 80, 90, 0.7);
+}
+
+tr {
+    color: #c8b6ff;
+}
+
+.bien {
+    color: #5cff72;
+    font-weight: bold;
+}
+
+.mal {
+    color: #ff4b4b;
+    font-weight: bold;
+}
+
+.fotoMimi {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 150px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px #00e1ff);
+}
+
+.ptextos {
+    color: #f2e8ff;
+    border: 4px solid #5c4033;
+    background-color: rgba(25, 25, 25, 0.85);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    padding: 10px;
+}
+
+.sobreMi {
+    float: left;
+    text-align: justify;
+    margin-right: 950px;
+}
+.tituloSobreMi {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.botonesF {
+    width: 200px;
+    height: 50px;
+    background-color: #00e1ff;
+    border-radius: 20px;
+    float: right;
+    text-align: center;
+        text-shadow: 0 0 10px #00e1ff, 0 0 20px #00b7ff, 0 0 40px #008cff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

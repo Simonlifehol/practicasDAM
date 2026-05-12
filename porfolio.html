@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-        <link id="tema" rel="stylesheet" href="estilosHielo.css">
+    <link id="tema" rel="stylesheet" href="estilosHielo.css">
 
 </head>
 
@@ -14,6 +14,7 @@
 
 
     <button class="botonesF" onclick="cambiarestilos()">Cambiar el tema</button>
+    <button class="botonesF" onclick="añadirEstudios()">Añadir estudios</button>
 
     <img class="fotoMimi" src="pixil-frame-0 (1).png" alt="miFoto" onclick="playmimi()">
     <h1>
@@ -120,23 +121,33 @@
         </p>
     </div>
 
-    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+    <form action="dfara" method="post" class="formulario">
+        <label for="estudioElegido">Estudio</label>
+        <input type="text" id="estudioElegido">
+        <br><br>
+        <label for="descripcion">Descripción</label>
+        <input type="text" id="descripcion">
+
+    </form>
+    <br><br>
     <h2 class="tituloSobreMi">IDE Conocidos</h2>
     <br><br><br><br>
-
-        <div class="contenedorV">
+    <div class="contenedorV">
         <div class="bloqueV">
             <h3>MySQL Workbench</h3>
             <p>
-                Uso de MySQL Workbench para la elaboración de consultas en bases de datos sencillas, además de prograrmar elementos como vistas, procedimientos, etc
+                Uso de MySQL Workbench para la elaboración de consultas en bases de datos sencillas, además de
+                prograrmar elementos como vistas, procedimientos, etc
             </p>
         </div>
 
         <div class="bloque">
             <h3>Inteliji IDEA</h3>
             <p>
-                Uso de Inteliji IDEA tanto con versión de IA como sin ella. Esto incuye uso de Java fx además de Java normal
+                Uso de Inteliji IDEA tanto con versión de IA como sin ella. Esto incuye uso de Java fx además de Java
+                normal
             </p>
         </div>
 
@@ -147,6 +158,7 @@
             </p>
         </div>
     </div>
+
     <script>
         let estiloElegido = "hielo"
         let tema = document.getElementById("tema");
@@ -155,7 +167,7 @@
             mimi.play();
         }
         function cambiarestilos() {
-            if (estiloElegido === "hielo"){
+            if (estiloElegido === "hielo") {
                 estiloElegido = "fantasma"
                 tema.href = "estilosFantasma.css";
             } else if (estiloElegido === "fantasma") {
@@ -163,7 +175,11 @@
                 tema.href = "estilosHielo.css";
             }
         }
+
+
     </script>
+
+
 </body>
 
 </html>
